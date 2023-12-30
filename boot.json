@@ -1,0 +1,108 @@
+{
+  "name": "AngelHalos",
+  "version": "1.1.0",
+  "styleFileList": [
+  ],
+  "scriptFileList_earlyload": [
+  ],
+  "scriptFileList_inject_early": [
+  ],
+  "scriptFileList_preload": [
+  ],
+  "scriptFileList": [
+  ],
+  "tweeFileList": [
+  ],
+  "imgFileList": [
+    "img/sex/doggy/active/transformations/angel/backhalo/mary.png",
+    "img/sex/doggy/active/transformations/angel/fronthalo/mary.png",
+    "img/sex/missionary/active/transformations/angel/backhalo/mary.png",
+    "img/sex/missionary/active/transformations/angel/fronthalo/mary.png",
+    "img/transformations/angel/backhalo/mary.png",
+    "img/transformations/angel/fronthalo/mary.png",
+    "img/sex/doggy/active/transformations/angel/backhalo/seia.png",
+    "img/sex/doggy/active/transformations/angel/fronthalo/seia.png",
+    "img/sex/missionary/active/transformations/angel/backhalo/seia.png",
+    "img/sex/missionary/active/transformations/angel/fronthalo/seia.png",
+    "img/transformations/angel/backhalo/seia.png",
+    "img/transformations/angel/fronthalo/seia.png",
+    "img/sex/doggy/active/transformations/angel/backhalo/nagisa.png",
+    "img/sex/doggy/active/transformations/angel/fronthalo/nagisa.png",
+    "img/sex/missionary/active/transformations/angel/backhalo/nagisa.png",
+    "img/sex/missionary/active/transformations/angel/fronthalo/nagisa.png",
+    "img/transformations/angel/backhalo/nagisa.png",
+    "img/transformations/angel/fronthalo/nagisa.png",
+    "img/sex/doggy/active/transformations/angel/backhalo/alice.png",
+    "img/sex/doggy/active/transformations/angel/fronthalo/alice.png",
+    "img/sex/missionary/active/transformations/angel/backhalo/alice.png",
+    "img/sex/missionary/active/transformations/angel/fronthalo/alice.png",
+    "img/transformations/angel/backhalo/alice.png",
+    "img/transformations/angel/fronthalo/alice.png",
+    "img/sex/doggy/active/transformations/angel/backhalo/himari.png",
+    "img/sex/doggy/active/transformations/angel/fronthalo/himari.png",
+    "img/sex/missionary/active/transformations/angel/backhalo/himari.png",
+    "img/sex/missionary/active/transformations/angel/fronthalo/himari.png",
+    "img/transformations/angel/backhalo/himari.png",
+    "img/transformations/angel/fronthalo/himari.png",
+    "img/sex/doggy/active/transformations/angel/backhalo/azusa.png",
+    "img/sex/doggy/active/transformations/angel/fronthalo/azusa.png",
+    "img/sex/missionary/active/transformations/angel/backhalo/azusa.png",
+    "img/sex/missionary/active/transformations/angel/fronthalo/azusa.png",
+    "img/transformations/angel/backhalo/azusa.png",
+    "img/transformations/angel/fronthalo/azusa.png",
+    "img/sex/doggy/active/transformations/angel/backhalo/kikyo.png",
+    "img/sex/doggy/active/transformations/angel/fronthalo/kikyo.png",
+    "img/sex/missionary/active/transformations/angel/backhalo/kikyo.png",
+    "img/sex/missionary/active/transformations/angel/fronthalo/kikyo.png",
+    "img/transformations/angel/backhalo/kikyo.png",
+    "img/transformations/angel/fronthalo/kikyo.png",
+    "img/sex/doggy/active/transformations/angel/backhalo/maki.png",
+    "img/sex/doggy/active/transformations/angel/fronthalo/maki.png",
+    "img/sex/missionary/active/transformations/angel/backhalo/maki.png",
+    "img/sex/missionary/active/transformations/angel/fronthalo/maki.png",
+    "img/transformations/angel/backhalo/maki.png",
+    "img/transformations/angel/fronthalo/maki.png"
+  ],
+  "additionFile": [
+  ],
+  "addonPlugin": [
+
+    {
+      "modName": "ModLoader DoL ImageLoaderHook",
+      "addonName": "ImageLoaderAddon",
+      "modVersion": ">=1.0.0",
+      "params": [
+      ]
+    },
+    {
+      "modName": "TweeReplacer",
+      "addonName": "TweeReplacerAddon",
+      "modVersion": "1.0.0",
+      "params": [
+        {
+          "passage": "Widgets Mirror",
+          "findRegex": "<<listbox \"_angel.halo\" autoselect>>",
+          "replace": "<<listbox \"_angel.halo\" autoselect>>\n\t\t\t\t\t\t\t\t<<option \"玛█(M██y))\" \"mary\">>\n\t\t\t\t\t\t\t\t<<option \"圣█(S██a)\" \"seia\">>\n\t\t\t\t\t\t\t\t<<option \"爱██(A███e)\" \"alice\">>\n\t\t\t\t\t\t\t\t<<option \"氵█(N████a)\" \"nagisa\">>\n\t\t\t\t\t\t\t\t<<option \"日█(H████i)\" \"himari\">>\n\t\t\t\t\t\t\t\t<<option \"木█(A███a)\" \"azusa\">>\n\t\t\t\t\t\t\t\t<<option \"桔█(K███o)\" \"kikyo\">>\n\t\t\t\t\t\t\t\t<<option \"真█(M██i)\" \"maki\">>"
+        }
+      ]
+    }
+  ],
+  "dependenceInfo": [
+    {
+      "modName": "ModLoader",
+      "version": ">=1.1.0"
+    },
+    {
+      "modName": "ModLoader DoL ImageLoaderHook",
+      "version": ">=1.0.0"
+    },
+    {
+      "modName": "TweeReplacer",
+      "version": ">=1.0.0"
+    },
+    {
+      "modName": "ReplacePatcher",
+      "version": ">=1.0.0"
+    }
+  ]
+}

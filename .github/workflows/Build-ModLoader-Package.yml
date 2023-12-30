@@ -1,0 +1,126 @@
+
+name: Build ModLoader Package
+
+on:
+  push:
+    tags:
+      - "v*"
+    branches: [ "master", "main" ]
+  pull_request:
+    branches: [ "master", "main" ]
+  workflow_dispatch:
+
+jobs:
+  meta:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - id: set_tag
+        run: |
+          is_release=${{ startsWith(github.ref, 'refs/tags/v') }}
+          tag=$(git describe --tags --match "v*" ${{ github.ref }} || true)
+          if [[ $tag != v* ]]; then
+            tag=$(curl -sX GET "https://api.github.com/repos/MaaAssistantArknights/MaaFramework/releases/latest" --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' | awk '/tag_name/{print $4}' FS='["]')
+            if [[ $tag != v* ]]; then
+              tag="v0.0.0"
+            fi
+            tag=$(date "+$tag-%y%m%d-$(git rev-parse --short HEAD)")
+          fi
+          if ! $($is_release) ; then
+            prefix=${tag%-*-*}
+            suffix=${tag#$prefix-}
+            tag="$prefix-ci.$suffix"
+          fi
+
+          echo tag=$tag | tee -a $GITHUB_OUTPUT
+          echo is_release=$is_release | tee -a $GITHUB_OUTPUT
+          echo version=${tag:1} | tee -a $GITHUB_OUTPUT
+    outputs:
+      tag: ${{ steps.set_tag.outputs.tag }}
+      is_release: ${{ steps.set_tag.outputs.is_release }}
+      version: ${{ steps.set_tag.outputs.version }}
+  build:
+    needs: [meta]
+    runs-on: ${{ matrix.os }}
+    env:
+      MOD_NAME: "AngelHalos"
+    strategy:
+      # Set fail-fast to false to ensure that feedback is delivered for all matrix combinations. Consider changing this to true when your workflow is stable.
+      fail-fast: false
+
+      # Set up a matrix to run the following 3 configurations:
+      # 1. <Windows, Release, latest MSVC compiler toolchain on the default runner image, default generator>
+      # 2. <Linux, Release, latest GCC compiler toolchain on the default runner image, default generator>
+      # 3. <Linux, Release, latest Clang compiler toolchain on the default runner image, default generator>
+      #
+      # To add more build types (Release, Debug, RelWithDebInfo, etc.) customize the build_type list.
+      matrix:
+        # https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs
+        os: [ ubuntu-latest ]
+        #os: [ ubuntu-latest, windows-latest ]
+        #build_type: [ Release ]
+        #c_compiler: [ gcc, cl ]
+        #ssl_type: [ StaticSSL, DynamicSSL ]
+        #build_mode: [ Normal, ProxyHandshakeAuth, MINI_BUILD_MODE ]
+        node-version: [ 18.x ]
+        #include:
+        #  - os: windows-latest
+        #    c_compiler: cl
+        #    cpp_compiler: cl
+        #    toolset: msvc
+        #    version: 2022
+        #  - os: ubuntu-latest
+        #    c_compiler: gcc
+        #    cpp_compiler: g++
+        #    toolset: gcc
+        #    version: 22.04
+        #    gcc: 12
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: corepack enable
+        run: corepack enable
+
+      - name: Update resource version
+        working-directory: ${{ github.workspace }}/
+        run: |
+          python3 "${{ github.workspace }}/.github/update_version_info.py" "boot.json" "${{ needs.meta.outputs.version }}"    
+
+      - name: Package Mod
+        working-directory: ${{ github.workspace }}/
+        run: |
+          node "${{ github.workspace }}/packModZip.js" "boot.json"
+          cp -r *.zip ../
+
+      - name: Upload
+        uses: actions/upload-artifact@v3
+        with:
+          name: ModPackage
+          path: ${{ github.workspace }}/*.zip
+  release:
+    if: ${{ needs.meta.outputs.is_release == 'true' }}
+    needs: [meta, build]
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+          path: assets
+
+      - uses: softprops/action-gh-release@v1
+        with:
+          files: assets/ModPackage/*
+          tag_name: ${{ needs.meta.outputs.tag }}
+
+
