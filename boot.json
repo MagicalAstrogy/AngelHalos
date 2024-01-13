@@ -61,7 +61,19 @@
     "img/sex/missionary/active/transformations/angel/backhalo/maki.png",
     "img/sex/missionary/active/transformations/angel/fronthalo/maki.png",
     "img/transformations/angel/backhalo/maki.png",
-    "img/transformations/angel/fronthalo/maki.png"
+    "img/transformations/angel/fronthalo/maki.png",
+    "img/sex/doggy/active/transformations/angel/backhalo/kotama.png",
+    "img/sex/doggy/active/transformations/angel/fronthalo/kotama.png",
+    "img/sex/missionary/active/transformations/angel/backhalo/kotama.png",
+    "img/sex/missionary/active/transformations/angel/fronthalo/kotama.png",
+    "img/transformations/angel/backhalo/kotama.png",
+    "img/transformations/angel/fronthalo/kotama.png",
+    "img/sex/doggy/active/transformations/angel/backhalo/hare.png",
+    "img/sex/doggy/active/transformations/angel/fronthalo/hare.png",
+    "img/sex/missionary/active/transformations/angel/backhalo/hare.png",
+    "img/sex/missionary/active/transformations/angel/fronthalo/hare.png",
+    "img/transformations/angel/backhalo/hare.png",
+    "img/transformations/angel/fronthalo/hare.png"
   ],
   "additionFile": [
   ],
@@ -82,7 +94,7 @@
         {
           "passage": "Widgets Mirror",
           "findRegex": "<<listbox \"_angel.halo\" autoselect>>",
-          "replace": "<<listbox \"_angel.halo\" autoselect>>\n\t\t\t\t\t\t\t\t<<option \"玛█(M██y))\" \"mary\">>\n\t\t\t\t\t\t\t\t<<option \"圣█(S██a)\" \"seia\">>\n\t\t\t\t\t\t\t\t<<option \"爱██(A███e)\" \"alice\">>\n\t\t\t\t\t\t\t\t<<option \"氵█(N████a)\" \"nagisa\">>\n\t\t\t\t\t\t\t\t<<option \"日█(H████i)\" \"himari\">>\n\t\t\t\t\t\t\t\t<<option \"木█(A███a)\" \"azusa\">>\n\t\t\t\t\t\t\t\t<<option \"桔█(K███o)\" \"kikyo\">>\n\t\t\t\t\t\t\t\t<<option \"真█(M██i)\" \"maki\">>"
+          "replace": "<<listbox \"_angel.halo\" autoselect>>\n\t\t\t\t\t\t\t\t<<option \"玛█(M██y))\" \"mary\">>\n\t\t\t\t\t\t\t\t<<option \"圣█(S██a)\" \"seia\">>\n\t\t\t\t\t\t\t\t<<option \"爱██(A███e)\" \"alice\">>\n\t\t\t\t\t\t\t\t<<option \"氵█(N████a)\" \"nagisa\">>\n\t\t\t\t\t\t\t\t<<option \"日█(H████i)\" \"himari\">>\n\t\t\t\t\t\t\t\t<<option \"木█(A███a)\" \"azusa\">>\n\t\t\t\t\t\t\t\t<<option \"桔█(K███o)\" \"kikyo\">>\n\t\t\t\t\t\t\t\t<<option \"真█(M██i)\" \"maki\">><<option \"小█(Ko██ma)\" \"kotama\">><<option \"小█　日█(H██e)\" \"hare\">>"
         }
       ]
     }
