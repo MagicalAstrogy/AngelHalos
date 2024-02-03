@@ -26,3 +26,4 @@ The current styles include:
 - Kotama
 - Hare
 - Ibuki
+- Iroha
