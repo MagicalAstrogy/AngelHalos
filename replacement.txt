@@ -1,0 +1,13 @@
+<<listbox "_angel.halo" autoselect>>
+								<<option "玛█(M██y))" "mary">>
+								<<option "圣█(S██a)" "seia">>
+								<<option "爱██(A███e)" "alice">>
+								<<option "氵█(N████a)" "nagisa">>
+								<<option "日█(H████i)" "himari">>
+								<<option "木█(A███a)" "azusa">>
+								<<option "桔█(K███o)" "kikyo">>
+								<<option "真█(M██i)" "maki">>
+								<<option "小█(Ko██ma)" "kotama">>
+								<<option "小█　日█(H██e)" "hare">>
+								<<option "亻██欠(Ib██i)" "ibuki">>
+								<<option "亻████皮(Ir██a)" "iroha">>

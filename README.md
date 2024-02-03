@@ -25,3 +25,4 @@ The current styles include:
 - Maki
 - Kotama
 - Hare
+- Ibuki

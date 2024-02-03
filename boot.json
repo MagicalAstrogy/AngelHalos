@@ -73,9 +73,22 @@
     "img/sex/missionary/active/transformations/angel/backhalo/hare.png",
     "img/sex/missionary/active/transformations/angel/fronthalo/hare.png",
     "img/transformations/angel/backhalo/hare.png",
-    "img/transformations/angel/fronthalo/hare.png"
+    "img/transformations/angel/fronthalo/hare.png",
+    "img/sex/doggy/active/transformations/angel/backhalo/ibuki.png",
+    "img/sex/doggy/active/transformations/angel/fronthalo/ibuki.png",
+    "img/sex/missionary/active/transformations/angel/backhalo/ibuki.png",
+    "img/sex/missionary/active/transformations/angel/fronthalo/ibuki.png",
+    "img/transformations/angel/backhalo/ibuki.png",
+    "img/transformations/angel/fronthalo/ibuki.png",
+    "img/sex/doggy/active/transformations/angel/backhalo/iroha.png",
+    "img/sex/doggy/active/transformations/angel/fronthalo/iroha.png",
+    "img/sex/missionary/active/transformations/angel/backhalo/iroha.png",
+    "img/sex/missionary/active/transformations/angel/fronthalo/iroha.png",
+    "img/transformations/angel/backhalo/iroha.png",
+    "img/transformations/angel/fronthalo/iroha.png"
   ],
   "additionFile": [
+    "replacement.txt"
   ],
   "addonPlugin": [
 
@@ -94,7 +107,7 @@
         {
           "passage": "Widgets Mirror",
           "findRegex": "<<listbox \"_angel.halo\" autoselect>>",
-          "replace": "<<listbox \"_angel.halo\" autoselect>>\n\t\t\t\t\t\t\t\t<<option \"玛█(M██y))\" \"mary\">>\n\t\t\t\t\t\t\t\t<<option \"圣█(S██a)\" \"seia\">>\n\t\t\t\t\t\t\t\t<<option \"爱██(A███e)\" \"alice\">>\n\t\t\t\t\t\t\t\t<<option \"氵█(N████a)\" \"nagisa\">>\n\t\t\t\t\t\t\t\t<<option \"日█(H████i)\" \"himari\">>\n\t\t\t\t\t\t\t\t<<option \"木█(A███a)\" \"azusa\">>\n\t\t\t\t\t\t\t\t<<option \"桔█(K███o)\" \"kikyo\">>\n\t\t\t\t\t\t\t\t<<option \"真█(M██i)\" \"maki\">><<option \"小█(Ko██ma)\" \"kotama\">><<option \"小█　日█(H██e)\" \"hare\">>"
+          "replaceFile": "replacement.txt"
         }
       ]
     }
