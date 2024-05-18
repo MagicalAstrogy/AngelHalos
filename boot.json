@@ -85,7 +85,19 @@
     "img/sex/missionary/active/transformations/angel/backhalo/iroha.png",
     "img/sex/missionary/active/transformations/angel/fronthalo/iroha.png",
     "img/transformations/angel/backhalo/iroha.png",
-    "img/transformations/angel/fronthalo/iroha.png"
+    "img/transformations/angel/fronthalo/iroha.png",
+    "img/sex/doggy/active/transformations/angel/backhalo/atsuko.png",
+    "img/sex/doggy/active/transformations/angel/fronthalo/atsuko.png",
+    "img/sex/missionary/active/transformations/angel/backhalo/atsuko.png",
+    "img/sex/missionary/active/transformations/angel/fronthalo/atsuko.png",
+    "img/transformations/angel/backhalo/atsuko.png",
+    "img/transformations/angel/fronthalo/atsuko.png",
+    "img/sex/doggy/active/transformations/angel/backhalo/saori.png",
+    "img/sex/doggy/active/transformations/angel/fronthalo/saori.png",
+    "img/sex/missionary/active/transformations/angel/backhalo/saori.png",
+    "img/sex/missionary/active/transformations/angel/fronthalo/saori.png",
+    "img/transformations/angel/backhalo/saori.png",
+    "img/transformations/angel/fronthalo/saori.png"
   ],
   "additionFile": [
     "replacement.txt"
@@ -107,6 +119,11 @@
         {
           "passage": "Widgets Mirror",
           "findRegex": "<<listbox \"_angel.halo\" autoselect>>",
+          "replaceFile": "replacement.txt"
+        },
+        {
+          "passage": "Widgets Mirror",
+          "findRegex": "__Halo__<br>",
           "replaceFile": "replacement.txt"
         }
       ]

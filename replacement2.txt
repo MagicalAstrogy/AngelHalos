@@ -1,4 +1,4 @@
-<<listbox "_angel.halo" autoselect>>
+__Halo__<br>
 								<<option "玛█(M██y))" "mary">>
 								<<option "圣█(S██a)" "seia">>
 								<<option "爱██(A███e)" "alice">>
