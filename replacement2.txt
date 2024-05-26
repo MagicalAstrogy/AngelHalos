@@ -1,15 +1,19 @@
 __Halo__<br>
-								<<option "玛█(M██y))" "mary">>
-								<<option "圣█(S██a)" "seia">>
-								<<option "爱██(A███e)" "alice">>
-								<<option "氵█(N████a)" "nagisa">>
-								<<option "日█(H████i)" "himari">>
-								<<option "木█(A███a)" "azusa">>
-								<<option "桔█(K███o)" "kikyo">>
-								<<option "真█(M██i)" "maki">>
-								<<option "小█(Ko██ma)" "kotama">>
-								<<option "小█　日█(H██e)" "hare">>
-								<<option "亻██欠(Ib██i)" "ibuki">>
-								<<option "亻████皮(Ir██a)" "iroha">>
-								<<option "亚█子(A███ko)" "atsuko">>
-								<<option "纱█(sa█ri)" "saori">>
+__Halo__<br>
+                <<link "Angel 玛█(M██y)">><<clearhalo>><<set _angel.halo = "mary">><<updatesidebarimg>><</link>><br>
+                <<link "Angel 圣█(S██a)">><<clearhalo>><<set _angel.halo = "seia">><<updatesidebarimg>><</link>><br>
+                <<link "Angel 爱██(A███e)">><<clearhalo>><<set _angel.halo = "alice">><<updatesidebarimg>><</link>><br>
+                <<link "Angel 氵█(N████a)">><<clearhalo>><<set _angel.halo = "nagisa">><<updatesidebarimg>><</link>><br>
+                <<link "Angel 日█(H████i)">><<clearhalo>><<set _angel.halo = "himari">><<updatesidebarimg>><</link>><br>
+                <<link "Angel 木█(A███a)">><<clearhalo>><<set _angel.halo = "azusa">><<updatesidebarimg>><</link>><br>
+                <<link "Angel 桔█(K███o)">><<clearhalo>><<set _angel.halo = "kikyo">><<updatesidebarimg>><</link>><br>
+                <<link "Angel 真█(M██i)">><<clearhalo>><<set _angel.halo = "maki">><<updatesidebarimg>><</link>><br>
+                <<link "Angel 小█(Ko██ma)">><<clearhalo>><<set _angel.halo = "kotama">><<updatesidebarimg>><</link>><br>
+                <<link "Angel 小█　日█(H██e)">><<clearhalo>><<set _angel.halo = "hare">><<updatesidebarimg>><</link>><br>
+                <<link "Angel 亻██欠(Ib██i)">><<clearhalo>><<set _angel.halo = "ibuki">><<updatesidebarimg>><</link>><br>
+                <<link "Angel 亻████皮(Ir██a)">><<clearhalo>><<set _angel.halo = "iroha">><<updatesidebarimg>><</link>><br>
+                <<link "Angel 亚█子(A███ko))">><<clearhalo>><<set _angel.halo = "atsuko">><<updatesidebarimg>><</link>><br>
+                <<link "Angel 纱█(Sa█ri)">><<clearhalo>><<set _angel.halo = "saori">><<updatesidebarimg>><</link>><br>
+                <<link "Angel 才█ 绿(mi██ri)">><<clearhalo>><<set _angel.halo = "midori">><<updatesidebarimg>><</link>><br>
+                <<link "Angel 才█ 桃(mo██i)">><<clearhalo>><<set _angel.halo = "momoi">><<updatesidebarimg>><</link>><br>
+

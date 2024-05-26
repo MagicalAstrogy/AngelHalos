@@ -13,3 +13,5 @@
 								<<option "亻████皮(Ir██a)" "iroha">>
 								<<option "亚█子(A███ko)" "atsuko">>
 								<<option "纱█(sa█ri)" "saori">>
+								<<option "才█ 绿(mi██ri)" "midori">>
+								<<option "才█ 桃(mo██i)" "momoi">>
