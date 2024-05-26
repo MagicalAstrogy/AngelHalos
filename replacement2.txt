@@ -1,5 +1,4 @@
 __Halo__<br>
-__Halo__<br>
                 <<link "Angel 玛█(M██y)">><<clearhalo>><<set _angel.halo = "mary">><<updatesidebarimg>><</link>><br>
                 <<link "Angel 圣█(S██a)">><<clearhalo>><<set _angel.halo = "seia">><<updatesidebarimg>><</link>><br>
                 <<link "Angel 爱██(A███e)">><<clearhalo>><<set _angel.halo = "alice">><<updatesidebarimg>><</link>><br>
