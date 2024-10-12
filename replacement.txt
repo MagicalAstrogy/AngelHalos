@@ -15,3 +15,5 @@
 								<<option "纱█(sa█ri)" "saori">>
 								<<option "才█ 绿(mi██ri)" "midori">>
 								<<option "才█ 桃(mo██i)" "momoi">>
+								<<option "ニ██ヤ教授(ni████ya)" "nyanya">>
+								<<option "女██关(ki██ki)" "kisaki">>

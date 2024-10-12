@@ -15,4 +15,6 @@ __Halo__<br>
                 <<link "Angel 纱█(Sa█ri)">><<clearhalo>><<set _angel.halo = "saori">><<updatesidebarimg>><</link>><br>
                 <<link "Angel 才█ 绿(mi██ri)">><<clearhalo>><<set _angel.halo = "midori">><<updatesidebarimg>><</link>><br>
                 <<link "Angel 才█ 桃(mo██i)">><<clearhalo>><<set _angel.halo = "momoi">><<updatesidebarimg>><</link>><br>
+                <<link "Angel ニ██ヤ教授(ni████ya)">><<clearhalo>><<set _angel.halo = "nyanya">><<updatesidebarimg>><</link>><br>
+                <<link "Angel 女██关(ki██ki)">><<clearhalo>><<set _angel.halo = "kisaki">><<updatesidebarimg>><</link>><br>
 
