@@ -17,3 +17,6 @@
 								<<option "才█ 桃(mo██i)" "momoi">>
 								<<option "ニ██ヤ教授(ni████ya)" "nyanya">>
 								<<option "女██关(ki██ki)" "kisaki">>
+								<<option "亻█香(y██ka)" "yuuka">>
+								<<option "讠█亚(n█a)" "noa">>
+								<<option "日█(hi██)" "hina">>

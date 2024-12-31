@@ -17,4 +17,7 @@ __Halo__<br>
                 <<link "Angel 才█ 桃(mo██i)">><<clearhalo>><<set _angel.halo = "momoi">><<updatesidebarimg>><</link>><br>
                 <<link "Angel ニ██ヤ教授(ni████ya)">><<clearhalo>><<set _angel.halo = "nyanya">><<updatesidebarimg>><</link>><br>
                 <<link "Angel 女██关(ki██ki)">><<clearhalo>><<set _angel.halo = "kisaki">><<updatesidebarimg>><</link>><br>
+                <<link "Angel 亻█香(y██ka)">><<clearhalo>><<set _angel.halo = "yuuka">><<updatesidebarimg>><</link>><br>
+                <<link "Angel 讠█亚(n█a)">><<clearhalo>><<set _angel.halo = "noa">><<updatesidebarimg>><</link>><br>
+                <<link "Angel 日█(hi██)">><<clearhalo>><<set _angel.halo = "hina">><<updatesidebarimg>><</link>><br>
 
