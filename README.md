@@ -27,3 +27,9 @@ The current styles include:
 - Hare
 - Ibuki
 - Iroha
+- Hina
+- Noa
+- Yuuka
+
+## For DoL v5.4.3-
+Use [v1.6.4](https://github.com/MagicalAstrogy/AngelHalos/releases/tag/v1.6.4) please. Latest version only supports v5.4.3+.
